@@ -48,6 +48,12 @@ To set up the Medicompanion RAG application, follow these steps:
    python main.py
    ```
 
+## Chatbot Output Example
+
+Here is an example of the chatbot output:
+
+![Chatbot Output](resources/console_output.png)
+
 ## Contribution
 
 Contributions are welcome! If you have suggestions or improvements, feel free to submit a pull request.
