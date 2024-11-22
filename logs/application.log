@@ -1,0 +1,31 @@
+2024-11-22 23:22:27,705 - INFO - Loading faiss.
+2024-11-22 23:22:27,745 - INFO - Successfully loaded faiss.
+2024-11-22 23:22:27,912 - INFO - Loading environment variables...
+2024-11-22 23:22:27,913 - INFO - Environment variables loaded successfully.
+2024-11-22 23:22:27,913 - INFO - Starting to load documents from the directory...
+2024-11-22 23:22:27,913 - INFO - Scanning directory for PDF files: rag-datasets
+2024-11-22 23:22:27,913 - INFO - Found 5 PDF file(s).
+2024-11-22 23:22:27,913 - INFO - Processing PDF: rag-datasets/health supplements/1. dietary supplements - for whom.pdf
+2024-11-22 23:22:28,086 - INFO - Successfully loaded 17 document(s) from: rag-datasets/health supplements/1. dietary supplements - for whom.pdf
+2024-11-22 23:22:28,086 - INFO - Processing PDF: rag-datasets/health supplements/3.health_supplements_side_effects.pdf
+2024-11-22 23:22:28,128 - INFO - Successfully loaded 11 document(s) from: rag-datasets/health supplements/3.health_supplements_side_effects.pdf
+2024-11-22 23:22:28,128 - INFO - Processing PDF: rag-datasets/health supplements/2. Nutraceuticals research.pdf
+2024-11-22 23:22:28,184 - INFO - Successfully loaded 10 document(s) from: rag-datasets/health supplements/2. Nutraceuticals research.pdf
+2024-11-22 23:22:28,184 - INFO - Processing PDF: rag-datasets/gym supplements/2. High Prevalence of Supplement Intake.pdf
+2024-11-22 23:22:28,233 - INFO - Successfully loaded 11 document(s) from: rag-datasets/gym supplements/2. High Prevalence of Supplement Intake.pdf
+2024-11-22 23:22:28,233 - INFO - Processing PDF: rag-datasets/gym supplements/1. Analysis of Actual Fitness Supplement.pdf
+2024-11-22 23:22:28,303 - INFO - Successfully loaded 15 document(s) from: rag-datasets/gym supplements/1. Analysis of Actual Fitness Supplement.pdf
+2024-11-22 23:22:28,303 - INFO - Completed processing. Total documents loaded: 64.
+2024-11-22 23:22:28,303 - INFO - Successfully loaded 64 documents.
+2024-11-22 23:22:28,303 - INFO - Splitting documents into smaller chunks...
+2024-11-22 23:22:28,309 - INFO - Split documents into 318 chunks.
+2024-11-22 23:22:28,309 - INFO - Creating the vector store...
+2024-11-22 23:22:28,541 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2024-11-22 23:22:48,562 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2024-11-22 23:22:48,631 - INFO - Vector store created successfully.
+2024-11-22 23:22:48,631 - INFO - Initializing the RAG chain...
+2024-11-22 23:22:48,650 - INFO - RAG chain initialized successfully.
+2024-11-22 23:23:05,805 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2024-11-22 23:23:06,555 - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-11-22 23:23:10,161 - INFO - Processed user question successfully.
+2024-11-22 23:23:20,263 - INFO - User exited the chatbot.
