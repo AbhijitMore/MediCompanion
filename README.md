@@ -9,18 +9,21 @@
 ├── README.md               # Documentation for the project
 ├── chat_model.py           # Implementation of the chat model
 ├── config.py               # Configuration settings for the application
-├── document_loader.py       # Functions to load documents from the dataset
+├── document_loader.py      # Functions to load documents from the dataset
+├── logger_config.py        # Logger configurations for the application
 ├── main.py                 # Entry point for the application
-├── rag-datasets             # Directory containing the datasets
-│   ├── gym supplements      # Documents related to gym supplements
+├── rag-datasets            # Directory containing the datasets
+│   ├── gym supplements     # Documents related to gym supplements
 │   │   ├── 1. Analysis of Actual Fitness Supplement.pdf
 │   │   └── 2. High Prevalence of Supplement Intake.pdf
-│   └── health supplements    # Documents related to health supplements
+│   └── health supplements  # Documents related to health supplements
 │       ├── 1. dietary supplements - for whom.pdf
 │       ├── 2. Nutraceuticals research.pdf
 │       └── 3.health_supplements_side_effects.pdf
-├── resources                # Additional resources (e.g., images, outputs)
-│   └── console_output.png   # Example output screenshot
+├── resources               # Additional resources (e.g., images, outputs)
+│   └── console_output.png  # Example output screenshot
+├── logs                    # Directory to store logs
+│   └── application.log     # log file
 ├── retriever.py            # Functions to retrieve relevant documents
 ├── text_splitter.py        # Functions to split text for processing
 └── vector_store.py         # Vector store implementation for embeddings
