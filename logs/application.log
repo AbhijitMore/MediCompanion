@@ -1,31 +1,31 @@
-2024-12-13 04:32:31,676 - INFO - Loading faiss.
-2024-12-13 04:32:31,705 - INFO - Successfully loaded faiss.
-2024-12-13 04:32:31,875 - INFO - Loading environment variables...
-2024-12-13 04:32:31,876 - INFO - Environment variables loaded successfully.
-2024-12-13 04:32:31,876 - INFO - Starting to load documents from the directory: rag-datasets...
-2024-12-13 04:32:31,876 - INFO - Scanning directory for PDF files: rag-datasets
-2024-12-13 04:32:31,876 - INFO - Found 5 PDF file(s).
-2024-12-13 04:32:31,876 - INFO - Processing PDF: rag-datasets/health supplements/1. dietary supplements - for whom.pdf
-2024-12-13 04:32:32,058 - INFO - Successfully loaded 17 document(s) from: rag-datasets/health supplements/1. dietary supplements - for whom.pdf
-2024-12-13 04:32:32,058 - INFO - Processing PDF: rag-datasets/health supplements/3.health_supplements_side_effects.pdf
-2024-12-13 04:32:32,100 - INFO - Successfully loaded 11 document(s) from: rag-datasets/health supplements/3.health_supplements_side_effects.pdf
-2024-12-13 04:32:32,100 - INFO - Processing PDF: rag-datasets/health supplements/2. Nutraceuticals research.pdf
-2024-12-13 04:32:32,154 - INFO - Successfully loaded 10 document(s) from: rag-datasets/health supplements/2. Nutraceuticals research.pdf
-2024-12-13 04:32:32,154 - INFO - Processing PDF: rag-datasets/gym supplements/2. High Prevalence of Supplement Intake.pdf
-2024-12-13 04:32:32,203 - INFO - Successfully loaded 11 document(s) from: rag-datasets/gym supplements/2. High Prevalence of Supplement Intake.pdf
-2024-12-13 04:32:32,203 - INFO - Processing PDF: rag-datasets/gym supplements/1. Analysis of Actual Fitness Supplement.pdf
-2024-12-13 04:32:32,273 - INFO - Successfully loaded 15 document(s) from: rag-datasets/gym supplements/1. Analysis of Actual Fitness Supplement.pdf
-2024-12-13 04:32:32,273 - INFO - Completed processing. Total documents loaded: 64.
-2024-12-13 04:32:32,273 - INFO - Successfully loaded 64 documents.
-2024-12-13 04:32:32,273 - INFO - Splitting documents into smaller chunks...
-2024-12-13 04:32:32,279 - INFO - Split documents into 318 chunks.
-2024-12-13 04:32:32,279 - INFO - Creating the vector store...
-2024-12-13 04:32:32,521 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
-2024-12-13 04:32:52,382 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
-2024-12-13 04:32:52,451 - INFO - Vector store created successfully.
-2024-12-13 04:32:52,451 - INFO - Initializing the RAG chain...
-2024-12-13 04:32:52,471 - INFO - RAG chain initialized successfully.
-2024-12-13 04:33:07,858 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
-2024-12-13 04:33:09,315 - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
-2024-12-13 04:33:11,327 - INFO - Processed user question successfully.
-2024-12-13 04:33:20,385 - INFO - User exited the chatbot.
+2024-12-13 05:03:47,652 - INFO - Loading faiss.
+2024-12-13 05:03:47,677 - INFO - Successfully loaded faiss.
+2024-12-13 05:03:47,871 - INFO - Loading environment variables...
+2024-12-13 05:03:47,872 - INFO - Environment variables loaded successfully.
+2024-12-13 05:03:47,872 - INFO - Starting to load documents from the directory: rag-datasets...
+2024-12-13 05:03:47,872 - INFO - Scanning directory for PDF files: rag-datasets
+2024-12-13 05:03:47,872 - INFO - Found 5 PDF file(s).
+2024-12-13 05:03:47,872 - INFO - Processing PDF: rag-datasets/health supplements/1. dietary supplements - for whom.pdf
+2024-12-13 05:03:48,035 - INFO - Successfully loaded 17 document(s) from: rag-datasets/health supplements/1. dietary supplements - for whom.pdf
+2024-12-13 05:03:48,035 - INFO - Processing PDF: rag-datasets/health supplements/3.health_supplements_side_effects.pdf
+2024-12-13 05:03:48,076 - INFO - Successfully loaded 11 document(s) from: rag-datasets/health supplements/3.health_supplements_side_effects.pdf
+2024-12-13 05:03:48,076 - INFO - Processing PDF: rag-datasets/health supplements/2. Nutraceuticals research.pdf
+2024-12-13 05:03:48,129 - INFO - Successfully loaded 10 document(s) from: rag-datasets/health supplements/2. Nutraceuticals research.pdf
+2024-12-13 05:03:48,129 - INFO - Processing PDF: rag-datasets/gym supplements/2. High Prevalence of Supplement Intake.pdf
+2024-12-13 05:03:48,179 - INFO - Successfully loaded 11 document(s) from: rag-datasets/gym supplements/2. High Prevalence of Supplement Intake.pdf
+2024-12-13 05:03:48,179 - INFO - Processing PDF: rag-datasets/gym supplements/1. Analysis of Actual Fitness Supplement.pdf
+2024-12-13 05:03:48,248 - INFO - Successfully loaded 15 document(s) from: rag-datasets/gym supplements/1. Analysis of Actual Fitness Supplement.pdf
+2024-12-13 05:03:48,248 - INFO - Completed processing. Total documents loaded: 64.
+2024-12-13 05:03:48,248 - INFO - Successfully loaded 64 documents.
+2024-12-13 05:03:48,248 - INFO - Splitting documents into smaller chunks...
+2024-12-13 05:03:48,254 - INFO - Split documents into 318 chunks.
+2024-12-13 05:03:48,254 - INFO - Creating the vector store...
+2024-12-13 05:03:48,397 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2024-12-13 05:04:08,401 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2024-12-13 05:04:08,480 - INFO - Vector store created successfully.
+2024-12-13 05:04:08,480 - INFO - Initializing the RAG chain...
+2024-12-13 05:04:08,496 - INFO - RAG chain initialized successfully.
+2024-12-13 05:05:04,181 - INFO - HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+2024-12-13 05:05:04,703 - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-13 05:05:07,298 - INFO - Processed user question successfully.
+2024-12-13 05:05:16,229 - INFO - User exited the chatbot.

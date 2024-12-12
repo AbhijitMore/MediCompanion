@@ -1,11 +1,11 @@
-# tasks.py
-
 from dotenv import load_dotenv
 from document_loader import load_pdfs_from_directory
 from text_splitter import split_documents
 from vector_store import create_vector_store
 from chat_model import create_rag_chain
 from logger_config import logger
+from rich.console import Console
+from rich import print
 import sys
 import argparse
 
@@ -68,26 +68,30 @@ def initialize_rag_chain(vector_store):
         logger.error("Failed to initialize the RAG chain.", exc_info=True)
         sys.exit(1)
 
+console = Console()
 def handle_user_interaction(rag_chain):
-    print("Welcome to the MediCompanion Chatbot! Type 'exit' to end the conversation.")
-    
+    # Welcome message (colored and bold)
+    console.print("\n[bold cyan]Welcome to the MediCompanion Chatbot![/bold cyan]")
+    console.print("[yellow]Type 'exit' to end the conversation.[/yellow]\n")
+
     while True:
         try:
-            # Get user input
-            user_question = input("You: ")
-            
-            # Check if user wants to exit
+            # Get user input (colored)
+            user_question = console.input("[green]You: [/green]")
+
+            # Check if the user wants to exit
             if user_question.lower() == 'exit':
                 logger.info("User exited the chatbot.")
-                print("Thank you for using MediCompanion. Goodbye!")
+                console.print("[bold red]Thank you for using MediCompanion. Goodbye![/bold red]\n")
                 break
 
-            # Fetch the answer
+            # Fetch the answer from the RAG chain
             response = rag_chain.invoke(user_question)
             logger.info("Processed user question successfully.")
-            
-            # Print the final output
-            print("MediCompanion:", response)
+
+            # Print the chatbot's response with color
+            console.print(f"[bold magenta]MediCompanion:[/bold magenta] [white]{response}[/white]\n")
+
         except Exception as e:
             logger.error("An error occurred during chatbot interaction.", exc_info=True)
-            print("An error occurred. Please try again.")
+            console.print("[bold red]An error occurred. Please try again.[/bold red]\n")
