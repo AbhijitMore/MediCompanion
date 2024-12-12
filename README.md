@@ -12,6 +12,7 @@
 ├── document_loader.py      # Functions to load documents from the dataset
 ├── logger_config.py        # Logger configurations for the application
 ├── main.py                 # Entry point for the application
+├── tasks.py                # all the logic for different tasks
 ├── rag-datasets            # Directory containing the datasets
 │   ├── gym supplements     # Documents related to gym supplements
 │   │   ├── 1. Analysis of Actual Fitness Supplement.pdf
